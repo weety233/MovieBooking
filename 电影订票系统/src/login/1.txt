@@ -1,0 +1,42 @@
+package login;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
+
+import entity.User;
+
+public class DataUtil {
+
+	public static List<User> getUser() {
+		User user = new User();
+		List<User> userlist=new ArrayList<User>();
+		try {
+			Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver"); //加载数据库驱动
+			System.out.println("数据库驱动加载成功！"); //输出的信息
+			String url = "jdbc:sqlserver://localhost:1433;DatabaseName=moviedate"; //获取连接URL
+			Connection con = DriverManager.getConnection(url, "sa", "123456"); //获取数据库连接
+			if (con != null) {
+				System.out.println("成功的与sql server数据库建立连接！！");
+			}
+			Statement statement=con.createStatement();
+			
+			ResultSet rs = statement.executeQuery("select * from dbo.duser");
+			while(rs.next()) {
+				user.setId(rs.getInt("id"));
+				user.setUsername(rs.getString("username"));
+				user.setEmail(rs.getString("email"));
+				userlist.add(user);
+				System.out.println(user);
+				user=new User();
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return userlist;
+	}
+
+}

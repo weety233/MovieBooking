@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app>
+  <servlet>
+    <servlet-name>useryanzheng</servlet-name>
+    <servlet-class>Useryanzheng</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>useryanzheng</servlet-name>
+    <url-pattern>/userlogin</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>adminyanzheng</servlet-name>
+    <servlet-class>Adminyanzheng</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>adminyanzheng</servlet-name>
+    <url-pattern>/adminlogin</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>insertuser</servlet-name>
+    <servlet-class>InsertUser</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>insertuser</servlet-name>
+    <url-pattern>/insert</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>updateuser</servlet-name>
+    <servlet-class>UpdateUser</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>updateuser</servlet-name>
+    <url-pattern>/updateuser</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>adminpassword</servlet-name>
+    <servlet-class>AdminPassword</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>adminpassword</servlet-name>
+    <url-pattern>/adminpassword</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>operatmovie</servlet-name>
+    <servlet-class>operatMovie</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>operatmovie</servlet-name>
+    <url-pattern>/operat</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>addmovie</servlet-name>
+    <servlet-class>addMovie</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>addmovie</servlet-name>
+    <url-pattern>/addmovie</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>search</servlet-name>
+    <servlet-class>Search</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>search</servlet-name>
+    <url-pattern>/search</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>updatemovie</servlet-name>
+    <servlet-class>updateMovie</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>updatemovie</servlet-name>
+    <url-pattern>/updatemovie</url-pattern>
+  </servlet-mapping>
+</web-app>

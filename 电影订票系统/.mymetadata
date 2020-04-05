@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="dingpiao"
+  id="myeclipse.1430895684670"
+  context-root="/dingpiao"
+  j2ee-spec="5.0"
+  archive="dingpiao.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+
