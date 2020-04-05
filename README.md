@@ -1,6 +1,6 @@
 # MovieBooking
-这是一个在线的影院订票网站，提供查阅正在上映与将要上映的电影信息与订票等服务。
-1.本平台采用（JSP+Servlet+ SQL Server）三层框架，需要用到的 Java 相关技术有 jsp 技术、servlet 技术、jdbc 技术等。
+这是一个在线的影院订票网站，提供查阅正在上映与将要上映的电影信息与订票等服务。<br>
+1.本平台采用（JSP+Servlet+ SQL Server）三层框架，需要用到的 Java 相关技术有 jsp 技术、servlet 技术、jdbc 技术等。<br>
 2.本系统分为前台和后台两大模块
   前台模块功能：
   （1）影片信息展示模块：
